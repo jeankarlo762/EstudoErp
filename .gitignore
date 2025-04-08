@@ -1,33 +1,61 @@
-HELP.md
+# Java / Maven
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+*.log
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Spring Boot
+spring.log
 
-### IntelliJ IDEA ###
-.idea
+# IntelliJ IDEA
+.idea/
 *.iws
 *.iml
 *.ipr
+out/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Eclipse
+.project
+.classpath
+.c9/
+.settings/
+bin/
 
-### VS Code ###
+# VS Code
 .vscode/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Test reports
+test-output/
+surefire-reports/
+
+# Logs
+*.log
+
+# Environment and secret files
+.env
+*.env
+
+# Angular
+/node_modules/
+dist/
+.angular/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Optional: ignore build files if Angular and Spring Boot build together
+frontend/dist/
+
+# Optional: ignore generated Swagger files (if using)
+generated/
+
+# Git
+*.orig
